@@ -70,9 +70,9 @@ open class TweeBorderedTextField: TweePlaceholderTextField {
 		// Path
 		line.path = UIBezierPath()
 
-		let yOffset = frame.height - line.layer.lineWidth / 2
+		let yOffset = (frame.height+10) - line.layer.lineWidth / 2
 
-		let startPoint = CGPoint(x: 0, y: yOffset)
+		let startPoint = CGPoint(x: -10, y: yOffset)
 		line.path.move(to: startPoint)
 
 		let endPoint = CGPoint(x: frame.width, y: yOffset)
